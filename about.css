@@ -1,0 +1,150 @@
+
+
+.about {
+    background-image: url('/images/autumn1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: rgb(255, 255, 255);
+    display: flex;
+    height: 900px;
+  }
+
+  
+  .welcometext{
+    animation: drop 1.3s ease;
+    clip-path: polygon(3% 0, 91% 0, 88% 100%, 0% 100%);
+    background-color: rgb(24, 24, 24);
+    width: 1250px;
+    height: 350px;
+    text-align: left;
+    margin: auto;
+  }
+  
+  .welcometext h2{
+    margin-bottom: 35px;
+    font-size: 50px;
+    margin-left: 70px;
+  }
+  
+  .welcometext p{
+    font-size: 30px;
+    margin-left: 70px;
+  }
+  .welcometext .see{
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .mytext-container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 30px auto;
+    display: flex;
+  }
+  
+  .mytext-section{
+    width: 60%;
+    height: auto;
+    margin: 30px auto;
+    filter: drop-shadow(0px 2px 3px black);
+    white-space: pre-wrap;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mytext-section2{
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+    white-space: pre-wrap;
+    
+  }
+  
+  .mypic{
+    width: 300px;
+    max-width: 300px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 1.3s ease;
+    margin-top: 180px;
+    margin-left: 210px;
+  }
+  
+  .photocredit{
+    font-size: 15px;
+    color: rgb(161, 161, 161);
+    margin-top: -13px;
+    background-color: rgb(17, 17, 17);
+    width: 225px;
+    animation: drop 1.3s ease;
+    margin-top: 0.5px;
+    margin-left: 210px;
+  }
+  
+  .mypic2{
+    height: 600px;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 40px;
+    filter: drop-shadow(3px 3px 2px black);
+  }
+  
+  .mypic3{
+    height: 495px;
+    margin-top: 250px;
+    margin-right: 10px;
+    margin-left: 40px;
+    filter: drop-shadow(3px 3px 2px black);
+  }
+  
+  .photocredit2{
+    font-size: 15px;
+    color: rgb(161, 161, 161);
+    margin-top: -5px;
+    margin-left: 40px;
+    background-color: rgb(17, 17, 17);
+    width: 400px;
+    filter: drop-shadow(3px 0px 2px black);
+  }
+  
+  .introtext{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 170px;
+    padding-bottom: 30px;
+    color: rgba(255, 255, 255, 0.815);
+    background-color: rgb(102, 102, 102);
+  }
+  
+  .introtext h3{
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+  
+  .introtext h4{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+    text-decoration: #000000 underline;
+    color:#000000;
+  }
+  
+  .introtext a{
+    color: #fff;
+    text-decoration: none;
+  }
+
+  @keyframes drop {
+    0%{
+      opacity: 0;
+      transform: translateY(-80px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }

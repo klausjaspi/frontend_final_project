@@ -1,0 +1,283 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  overflow: scroll;
+}
+
+
+/*Main page video css*/
+.videobackground{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+  }
+  
+  .hero-container {
+    height: 100vh;
+    width: clamp(20%, 100% , 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+  }
+
+  
+  .label {
+    color: #fff;
+    font-size: clamp(2rem, 3.5vw, 10rem);
+    text-align: center;
+  }
+  
+  .hero-container > p {
+    margin-top: 8px;
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .hero-btns {
+    margin-top: 32px;
+  }
+  
+  .hero-btns .btn {
+    margin: 6px;
+  }
+  
+  
+/*Main page css end*/
+
+/*Navbar css*/
+
+header{
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  margin: auto;
+  align-items: center;
+  background-color: #242424;
+  position: fixed;
+  top: 0;
+}
+
+.logo-container, .nav-links{
+  display: flex;
+
+}
+
+.logo-container{
+  flex: 1;
+  margin-top: 25px;
+  margin-left: 100px;
+}
+
+.logotext{
+  color: #fff;
+  height: 60px;
+  font-size: 32px;
+}
+
+
+nav{
+  flex: 2;
+  background-color: #242424;
+}
+
+.nav-links{
+  justify-content: flex-start;
+  list-style: none;
+  position: fixed;
+  display: flex;
+}
+
+.fa-bars{
+  display: none;
+  cursor: pointer;
+}
+
+.nav-link{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-decoration: none;
+  margin-right: 105px;
+}
+
+.nav-right{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 200px;
+}
+
+.nav-link:hover, .nav-right:hover{
+  border-bottom: #fff 4px solid;
+  transition: all ease-out;
+}
+
+.mob_nav-links, .hidden_menu{
+  display: none;
+}
+
+/*Navbar css end*/
+
+/*Sign up css*/
+
+.sign-up {
+  background-image: url('/src/images/img-8.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.signupform-input {
+  padding: 8px 10px;
+  border-radius: 2px;
+  margin-right: 10px;
+  outline: none;
+  border: solid;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.signupformend-input {
+  padding: 8px 10px;
+  border-radius: 2px;
+  margin-right: 10px;
+  outline: none;
+  border: solid;
+  font-size: 18px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.signup-subscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+  color: #fff;
+  background-color: #ffffff;
+  background-image: url('/images/img-8.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+}
+
+.form-style{
+  background-color: #242424;
+  padding: 150px;
+  align-items: center;
+  justify-content: center;
+  margin: 10%;
+}
+
+.form-style > h1{
+  padding-bottom: 20px;
+  font-size: 70px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.btn--outline2{
+  background-color: #000000;
+  color: #ffffff;
+  padding: 8px 20px;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease-out;
+}
+.btn--primary{
+  background-color: #242424;
+  color: #fafafa;
+  border: 1px solid var(--primary);
+}
+
+
+
+.form-style h1{
+  font-size: 55px;
+  width: 250px;
+}
+
+.signupform-input{
+  width: 190px;
+  margin: 10px auto;
+}
+
+.signupformend-input{
+  width: 190px;
+  margin: 10px;
+  margin-bottom: 30px;
+}
+
+.active {
+  display: block;
+}
+
+/*Sign up css end*/
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hidden_menu{
+    display: none;
+    width: 94vh;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    margin: 70px auto;
+    justify-content: center;
+  }
+
+  .active{
+    display: block;
+  }
+  
+
+  .mob_nav-links{
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    width: 80%;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.5rem;
+    
+    color: #fff;
+    padding: 14px 20px;
+    
+    background-color: #242424;
+  }
+
+  .mob_nav-link{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .fa-bars{
+    display: flex;
+    margin-left: 39vh;
+    font-size: 2rem;
+    color:#fff;
+  }
+
+
+
+}
